@@ -1,9 +1,8 @@
 {
-  "name": "hardhat-project",
-  "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "@nomiclabs/hardhat-ethers": "^2.2.3",
-    "ethers": "^6.13.4",
-    "hardhat": "^2.22.17"
-  }
+  "name": "nft-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Gato24-tech/nft-project.git",
+  "author": "Ivan <Ivan.queralt@gmail.com>",
+  "license": "MIT"
 }
