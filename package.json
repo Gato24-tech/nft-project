@@ -4,5 +4,22 @@
   "main": "index.js",
   "repository": "https://github.com/Gato24-tech/nft-project.git",
   "author": "Ivan <Ivan.queralt@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "chain": "hardhat node",
+    "deploy": "hardhat run scripts/deploy.js --network localhost",
+    "start": "react-scripts start"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "ethers": "^5.7.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-verify": "^2.0.12",
+    "hardhat": "^2.16.1"
+  }
 }
