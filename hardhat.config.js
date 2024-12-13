@@ -2,7 +2,7 @@ require("@nomicfoundation/hardhat-toolbox");
 
 module.exports = {
   solidity: {
-    version: "0.8.24", // Define la versión principal
+    version: "0.8.18", // Define la versión principal
     settings: {
       optimizer: {
         enabled: true,

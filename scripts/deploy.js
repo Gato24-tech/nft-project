@@ -8,11 +8,16 @@ async function main() {
     const balance = await deployer.getBalance();
     console.log("Account balance:", balance.toString());
 
-    // Reemplaza 'MyContract' con el nombre de tu contrato
-    const MyContract = await ethers.getContractFactory("MyContract");
-    const myContract = await MyContract.deploy();
+    // Define el tiempo de desbloqueo (1 semana desde ahora)
+    const unlockTime = Math.floor(Date.now() / 1000) + 7 * 24 * 60 * 60;
 
-    console.log("Contract deployed to address:", myContract.address);
+    // Obtén la fábrica del contrato
+    const Lock = await ethers.getContractFactory("Lock");
+
+    // Despliega el contrato, pasando el argumento unlockTime
+    const Lockins = await Lock.deploy(unlockTime);
+
+    console.log("Contract deployed to address:", Lockins.address);
 }
 
 // Ejecuta el script
